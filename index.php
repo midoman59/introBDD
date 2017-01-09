@@ -26,6 +26,7 @@ $link=  mysqli_connect("localhost","root","", "formation")
 		or die("Impossible de se connecter : ".mysql_error());
 mysqli_query($link,"SET NAMES UTF8");
 
+
 $resultat=  mysqli_query($link, 'SELECT * FROM `page`');
 
 while ($data=  mysqli_fetch_assoc($resultat))
